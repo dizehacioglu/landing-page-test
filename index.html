@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <form id="lead">
+    <label for="FirstName">First Name</label>
+    <input type="text" name="FirstName">
+
+    <label for="LastName">Last Name</label>
+    <input type="text" name="LastName">
+
+    <label for="Email">Email</label>
+    <input type="email" name="Email">
+
+    <!-- Hidden inputs for Salesforce submission -->
+    <input type="hidden" name="Company" value="unknown">
+    <input type="hidden" name="Campus__c" value="Denver-Platte">
+    <input type="hidden" name="Product__c" value="Full Stack">
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
